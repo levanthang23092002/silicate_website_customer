@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    padding: 0px 50px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+  }
+
+  .header-logo img {
+    height: 70px;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+
+  .header-menu {
+    list-style: none;
+    display: flex;
+  }
+
+  .header-menu li {
+    margin-left: 50px; /* Increased spacing */
+  }
+
+  .header-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .header-menu li a:hover {
+    color: #d13131;
+  }
+
+  .header-language {
+    text-transform: uppercase;
+  }
+
+  .header-language select {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .header-language select:hover {
+    background-color: #555;
+  }
+  .footer-container {
+    background-color: #333; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 40px 0; /* Khoảng cách */
+    display: flex; /* Sử dụng flexbox để bố trí */
+    flex-wrap: wrap; /* Cho phép các phần tự động xuống dòng */
+    justify-content: space-around; /* Khoảng cách giữa các phần */
+  }
+
+  .footer-section {
+    width: 30%; /* Chiều rộng mỗi phần */
+    margin-bottom: 20px; /* Khoảng cách giữa các phần */
+    box-sizing: border-box; /* Bao gồm padding và border trong chiều rộng */
+  }
+
+  /* Điều chỉnh cho màn hình nhỏ hơn */
+  @media (max-width: 768px) {
+    .footer-section {
+      width: 100%; /* Mỗi phần chiếm toàn bộ chiều rộng */
+    }
+  }
+
+  .footer-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ddd; /* Màu chữ title */
+  }
+
+  .footer-contact p,
+  .footer-links li,
+  .footer-products li {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+
+  .footer-links a,
+  .footer-products a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer-map {
+    width: 40%; /* Điều chỉnh chiều rộng của bản đồ */
+  }
+
+  .footer-copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555; /* Đường kẻ phân cách */
+  }
+
+  .footer-copyright-text {
+    font-size: 0.9em;
+  }
+
+  /* Định dạng cho Google Map (bạn cần tùy chỉnh thêm tùy theo kích thước) */
+  #footer-map {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Tùy chỉnh thêm nếu cần */
+  .footer-certification {
+    width: 20%; /* Điều chỉnh chiều rộng */
+    text-align: center;
+  }
+
+  .footer-certification img {
+    max-width: 100%;
+  }
