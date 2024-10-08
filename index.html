@@ -40,39 +40,44 @@
     />
     <meta name="twitter:image" content="your-logo.png" />
     <!-- Update the URL for the actual image -->
-
-    <style>
-      
-    </style>
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/library/swiper/swiper.css">
   </head>
   <body>
-    <header class="header">
-      <nav class="header-navbar">
-        <div class="header-logo">
-          <img src="public/logo_final.png" alt="Ankit Silicate Logo" />
-          <!-- Add the actual logo path -->
-        </div>
-        <ul class="header-menu">
-          <li><a href="/" title="Home">Home</a></li>
-          <li><a href="/about" title="Learn more about us">About</a></li>
-          <li><a href="/products" title="Browse our products">Products</a></li>
-          <li>
-            <a href="/industries" title="Industries we serve"
-              >Industries We Serve</a
-            >
-          </li>
-          <li><a href="/blog" title="Read our blog">Blog</a></li>
-          <li><a href="/career" title="Join our team">Career</a></li>
-          <li><a href="/contact" title="Get in touch with us">Contact</a></li>
-        </ul>
-        <div class="header-language">
-          <select>
-            <option value="vi">Viet Nam</option>
-            <option value="en">ENG</option>
-            <option value="zh">China</option>
-          </select>
-        </div>
-      </nav>
+    <header class="header ">
+      <div class="container-fluid pt-2 pb-2">
+        <nav class="header-navbar">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="./public/images/logo/logo_final.png" alt="Ankit Silicate Logo" />
+            </a>
+          </div>
+          <div class="right-navbar">
+            <ul class="header-menu">
+              <li class="menu-item active"><a href="/" title="Home">Home</a></li>
+              <li class="menu-item"><a href="/about" title="Learn more about us">About</a></li>
+              <li class="menu-item"><a href="/products" title="Browse our products">Products</a></li>
+              <li class="menu-item">
+                <a href="/industries" title="Industries we serve"
+                  >Industries We Serve</a
+                >
+              </li>
+              <li class="menu-item"><a href="/blog" title="Read our blog">Blog</a></li>
+              <li class="menu-item"><a href="/career" title="Join our team">Career</a></li>
+              <li class="menu-item"><a href="/contact" title="Get in touch with us">Contact</a></li>
+            </ul>
+            <div class="header-language">
+              <select>
+                <option value="vi">Viet Nam</option>
+                <option value="en">ENG</option>
+                <option value="zh">China</option>
+              </select>
+            </div>
+          </div>
+        </nav>
+      </div>
+     
     </header>
 
     <main>
@@ -133,5 +138,7 @@
         </p>
       </div>
     </footer>
+    <script src="./public/library/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/library/swiper/swiper.js"></script>
   </body>
 </html>
