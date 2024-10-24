@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Trang Bình cung cấp sản phẩm silicate chất lượng cao cho ngành xây dựng, gốm sứ và nhiều lĩnh vực khác. Khám phá ngay dịch vụ và cơ hội nghề nghiệp cùng chúng tôi!" />
+  <meta name="keywords" content="Trang Bình Silicate,  trang bình silicate, trangbinhsilicate , Silicate Products, Trang Bình" />
+  <meta name="author" content="Trang Bình Silicate" />
+  <title>Trang Bình silicate</title>
+  <link href="../public/images/logo/logo_final.png" rel="icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../public/img/favicons/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link href="../public/images/logo/logo_final.png" rel="apple-touch-icon">
+  <link href="../public/images/logo/logo_final.png" rel="apple-touch-icon-precomposed">
+
+  <!-- Open Graph meta tags for social media sharing -->
+  <meta property="og:title" content="Trang Bình SiLicate" />
+  <meta property="og:description" content="Trang Bình Silicate định hướng trở thành nhà cung ứng hàng đầu về Silicate cùng các sản phẩm tinh chế từ Silicate trên thị trường nội địa và Quốc tế." />
+  <meta property="og:image" content="../public/images/logo/logo_final.png" />
+  <meta property="og:url" content="https://www.trangbinhsilicate.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="Trang Bình Silicate" />
+  <meta name="twitter:title" content="Trang Bình SiLicate" />
+  <meta name="twitter:description" content="Trang Bình Silicate định hướng trở thành nhà cung ứng hàng đầu về Silicate cùng các sản phẩm tinh chế từ Silicate trên thị trường nội địa và Quốc tế." />
+  <meta name="twitter:image" content="../public/images/logo/logo_final.png" />
+  <!-- Update the URL for the actual image -->
+  <link rel="stylesheet" href="../public/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../public/css/main.css" />
+
+
+  <link rel="stylesheet" href="../public/library/swiper/swiper.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="../public/library/owl.carousel.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/library/Icon-font-7-stroke-PIXEDEN-v-1-2-0/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <%- include('./partials/header'); %>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../public/images/Ui/product-lienquan1.jpeg" class="d-block w-100 vh-60" alt="Slide 1">
+      </div>
+
+    </div>
+
+  </div>
+  <main class="industries container">
+    <section class="item-industries-section container">
+      <div class="col-md-9 content" id="product-detail">
+        <h3 id="product-name">Name</h3>
+        <div>
+          <p id="product-description">description</p>
+          <p><strong> <%= __('item_industries_benefits') %><span id="product-name-highlight">name</span> :</strong></p>
+          <ul id="product-benefits">
+            <li>công dụng 1</li>
+            <li>công dụng 2</li>
+            <li>công dụng 3</li>
+            <li>công dụng 4</li>
+            <li>công dụng 5</li>
+          </ul>
+        </div>
+        <h3> <%= __('item_industries_photo') %><span id="product-name-photos">name</span></h3>
+        <div class="img">
+          <img id="product-image" src="./public/images/Ui/related-product/thucpham.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-md-3 applications">
+        <h3> <%= __('item_industries_applications') %></h3>
+        <ul id="product-list">
+
+        </ul>
+      </div>
+
+    </section>
+  </main>
+  <%- include('./partials/footer'); %>
+
+
+  <script src="../public/library/swiper/swiper-bundle.min.js"></script>
+  <script src="../public/library/swiper/swiper.js"></script>
+  <script src="../public/js/bootstrap.min.js"></script>
+  <script src="../public/library/owl.carousel.min.js"></script>
+  <script src="../public/js/item-industrie.js">
+   
+  </script>
+
+</body>
+
+</html>

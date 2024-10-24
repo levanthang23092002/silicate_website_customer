@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/main.css" />
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Dashboard</title>
+  </head>
+  <body class="dashboard">
+    <div class="header">
+      <h1>Dashboard</h1>
+      <button id="btnLogout">Đăng Xuất</button>
+    </div>
+    <div class="dashboard-container">
+      <nav class="dashboard-sidebar col-lg-2">
+        <h2>Menu</h2>
+        <ul class="sidebar-menu-list">
+          <li class="sidebar-item">
+            <a class="children-title" id="manageImages" href="javascript:void(0)">
+              <i class='bx bxs-user-badge'></i> Quản Lý Đối Tác
+            </a>
+          </li>
+          <li class="sidebar-item hash-sub-menu">
+            <a class="children-title" href="javascript:void(0)">
+              <i class='bx bx-bar-chart-square'></i> Quản Lý Sản Phẩm
+            </a>
+            <ul class="sub-menu-item">
+              <li class="sum-item">
+                <a id="listProducts" href="javascript:void(0)"><i class='bx bx-border-all'></i>Tất cả sản phẩm</a>
+              </li>
+              <li class="sum-item">
+                <a id="addProduct" href="javascript:void(0)"><i class='bx bxs-file-plus' ></i>Thêm sản phẩm</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="dashboard-main-content">
+        <section class="dashboard-upload-section title" id="uploadSection">
+          <h3>Công Ty Liên Quan</h3>
+          <h4>Thêm công ty</h4>
+          <input type="file" id="imageInput" accept="image/*" multiple />
+          <button id="uploadBtn">Tải Lên</button>
+          <div id="imagePreview" class="dashboard-image-preview"></div>
+        </section>
+        <%- include('component/addProduct')%>
+        <%- include('component/listProducts')%>
+        <%- include('component/detailAndEditProduct')%>
+      </div>
+    </div>
+    <script src="../public/library/swiper/swiper-bundle.min.js"></script>
+    <script src="../public/library/swiper/swiper.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../public/library/owl.carousel.min.js"></script>
+    <script src="../public/js/dashboard.js"></script>
+  </body>
+</html>

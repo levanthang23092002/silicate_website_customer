@@ -1,0 +1,82 @@
+<header class="header">
+  <div class="container-fluid pt-2 pb-2">
+    <nav class="header-navbar">
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="./public/images/logo/logo_final.png" alt="Ankit Silicate Logo" />
+        </a>
+      </div>
+      <div class="right-navbar">
+        <ul class="header-menu">
+          <li class="menu-item active">
+            <a href="/?lang=vi" title="Home"><%=  __('nav_home') %></a>
+          </li>
+          <li class="menu-item">
+            <a href="/about" title="Learn more about us"><%= __('nav_about')  %></a>
+          </li>
+          <li class="menu-item dropdown">
+            <a title="Browse our products"><%=  __('nav_product') %></a>
+            <ul class="dropdown-content">
+              <li><a href="/product_liquid" title="Product 1"><%= __('name_product_liquid') %></a></li>
+              <li><a href="/product_glass" title="Product 2"><%= __('name_product_glass') %></a></li>
+              <li><a href="/product_powder" title="Product 3"><%= __('name_product_powder') %></a></li>
+
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="/industries" title="Industries we serve"><%=  __('nav_IND') %></a>
+          </li>
+          <li class="menu-item">
+            <a href="/contact" title="Get in touch with us"><%=  __('nav_contact') %></a>
+          </li>
+        </ul>
+        <div class="header-language">
+          <select id="language-select" onchange="changeLanguage()">
+            <option value="vi" <%= locale === 'vi' ? 'selected' : '' %>>Vietnamese</option>
+            <option value="en" <%= locale === 'en' ? 'selected' : '' %>>English</option>
+            <option value="zh" <%= locale === 'zh' ? 'selected' : '' %>>China</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<script>
+  
+
+  const languageSelect = document.getElementById('language-select'); // Get the select element
+  const lang = languageSelect.value;
+  switch (lang) {
+        case 'vi':
+            languageSelect.style.backgroundImage = "url('../../public/images/Ui/Quocki/vm-t.gif')";
+            break;
+        case 'en':
+            languageSelect.style.backgroundImage = "url('../../public/images/Ui/Quocki/ic-t.gif')";
+            break;
+        case 'zh':
+            languageSelect.style.backgroundImage = "url('../../public/images/Ui/Quocki/ch-t.gif')";
+            break;
+        default:
+            languageSelect.style.backgroundImage = "none";
+    }
+  
+  function changeLanguage() {
+    const languageSelect = document.getElementById('language-select'); // Get the select element
+    const lang = languageSelect.value; // Get the selected value
+    
+    // Change the URL to reflect the language change
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.set('lang', lang);
+    const newUrl = window.location.pathname + '?' + urlParams.toString();
+    
+  
+    setTimeout(() => {
+        window.location.href = newUrl;
+    }, 100); // Delay the redirect to allow background change to reflect
+}
+
+const urlParams = new URLSearchParams(window.location.search);
+  const currentLang = urlParams.get('lang') || 'vi'; // Mặc định là 'en'
+  document.getElementById('language-select').value = currentLang;
+
+</script>

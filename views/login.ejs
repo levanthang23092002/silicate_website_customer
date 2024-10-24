@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+      content="Ankit Silicate offers high-quality silicate products for various industries. Explore our products, services, and career opportunities." />
+    <meta name="keywords" content="Ankit Silicate, Silicate Products, Industrial Silicate, Career, Industries We Serve" />
+    <meta name="author" content="Ankit Silicate" />
+    <title>Ankit Silicate - Leading Silicate Products Supplier</title>
+  
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="Ankit Silicate - Leading Silicate Products Supplier" />
+    <meta property="og:description" content="Explore a wide range of silicate products that serve various industries." />
+    <meta property="og:image" content="your-logo.png" />
+    <!-- Update the URL for the actual image -->
+    <meta property="og:url" content="https://www.yourwebsite.com" />
+    <meta property="og:type" content="website" />
+  
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ankit Silicate - Leading Silicate Products Supplier" />
+    <meta name="twitter:description"
+      content="Ankit Silicate offers high-quality silicate products for various industries." />
+    <meta name="twitter:image" content="your-logo.png" />
+    <!-- Update the URL for the actual image -->
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+  
+  
+    <link rel="stylesheet" href="./public/library/swiper/swiper.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="public/library/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+      href="./public/library/Icon-font-7-stroke-PIXEDEN-v-1-2-0/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+
+  <body class="index-page">
+    <%- include('./partials/header'); %>
+
+    <main class="main">
+      
+        
+       
+        <section class="login">
+            <div class="container">
+              <div class="row">
+               
+                <div class="col-lg-6 col-md-8 login-box">
+                  
+                  <div class="col-lg-12 login-title">
+                    LOGIN ADMIN
+                  </div>
+                  <div class="col-lg-12 login-form">
+                    <div class="col-lg-12 login-form">
+                      <form id="login-form">
+                        <div class="form-group">
+                          <label class="form-control-label">Email</label>
+                          <input type="text" class="form-control ps-2" id="email" placeholder="Nhập email">
+                        </div>
+                        <div class="form-group">
+                          <label class="form-control-label">Mật Khẩu</label>
+                          <div class="input-container">
+                            <input type="password" class="form-control ps-2" id="password" placeholder="Nhập mật khẩu" />
+                            <span class="toggle-password" id="togglePassword" onclick="togglePasswordVisibility()">
+                              <i class="fas fa-eye"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 loginbttm">
+                          <div class="col-lg-6 login-btm login-text">
+                            <!-- Error Message -->
+                          </div>
+                          <div class="col-lg-12 login-btm login-button">
+                            <button id="login" type="submit" class="btn-outline-primary">LOGIN</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-2"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+      
+    </main>
+
+    <%- include('./partials/footer'); %>
+
+   
+  <script src="../public/library/swiper/swiper-bundle.min.js"></script>
+  <script src="../public/library/swiper/swiper.js"></script>
+  <script src="../public/js/bootstrap.min.js"></script>
+  <script src="../public/library/owl.carousel.min.js"></script>
+  <script src="../public/js/login.js"></script>
+  <script>
+    function togglePasswordVisibility() {
+    const passwordField = document.getElementById("password");
+    const togglePassword = document.getElementById("togglePassword").querySelector("i");
+  
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+      togglePassword.classList.remove("fa-eye");
+      togglePassword.classList.add("fa-eye-slash");
+    } else {
+      passwordField.type = "password";
+      togglePassword.classList.remove("fa-eye-slash");
+      togglePassword.classList.add("fa-eye");
+    }
+  }
+  
+  </script>
+  
+    
+  </body>
+</html>
